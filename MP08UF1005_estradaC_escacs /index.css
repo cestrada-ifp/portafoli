@@ -1,0 +1,73 @@
+
+       /*  position static, no posicional
+            position relative, posicioat respecte d'un mateix
+            position, absolute posicionat respecte d'un lloc fix
+            position, fixed posicionat respecte la finestra del navegador
+        */
+
+        .taulell {
+            width: 800px;
+            height: 800px;
+            padding: 15px;
+            background-color: rgb(60, 0, 128);
+            margin: 0 auto;
+            box-shadow: 10px 10px 0 gray;
+        }
+
+        .contenidor{
+            height: 100px;
+            width: 800px;
+            background: rgb(252, 240, 255);
+            padding: 0px;
+            margin: 0 auto;
+        }
+
+        .casella{
+            width: 100px;
+            height: 100px;
+            background-color:ivory;
+            background-image: linear-gradient(45deg, rgb(222, 209, 227),rgb(255, 255, 255));
+            float: left;
+        }
+        .contenidor:nth-child(2n+1) .casella:nth-child(2n){
+            background-color: black;
+            background-image: linear-gradient(45deg, grey, black);
+        }     
+        .contenidor:nth-child(2n) .casella:nth-child(2n+1){
+            background-color: black;
+            background-image: linear-gradient(45deg, grey, black);
+        }      
+        .fitxa {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 10px;
+            box-shadow:inset 10px 10px 10px rgb(218, 197, 255), 
+                              5px 5px 3px black;
+            background-image:url(https://upload-os-bbs.hoyolab.com/upload/2022/12/21/56605917/4b949a484dbd34051d7c17b1fb8d41cc_2491667590306264134.png);
+            background-size: 80px;
+            transition: 1s;
+        }
+
+        .contenidor:nth-child(7) .fitxa:hover, .contenidor:nth-child(8) .fitxa:hover{
+            position: relative;
+            bottom: 100px;
+        }
+        .contenidor:nth-child(1) .fitxa:hover, .contenidor:nth-child(2) .fitxa:hover{
+            position: relative;
+            top: 100px;
+        }
+        
+        .contenidor:nth-child(1) .fitxa, .contenidor:nth-child(2) .fitxa{
+            background-image:url(https://upload-os-bbs.hoyolab.com/upload/2022/12/21/56605917/4b949a484dbd34051d7c17b1fb8d41cc_2491667590306264134.png);
+            
+        }
+        .contenidor:nth-child(7) .fitxa, .contenidor:nth-child(8) .fitxa{
+            background-image:url(https://i.pinimg.com/originals/de/73/fc/de73fcbd7d2cd99a5755272f60079c96.png);
+        }
+body{
+background-image: url(https://i.redd.it/anyone-else-have-a-scarameow-mandela-effect-where-he-has-a-v0-e5hehlz6bkab1.png?width=1080&format=png&auto=webp&s=41b11c5140e64fabf4904ca6a898780e3d5b5658); 
+background-size: 400px;
+}
+        
+
